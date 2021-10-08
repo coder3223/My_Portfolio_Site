@@ -24,10 +24,6 @@ body {
   border-bottom: 1px solid var(--primaryColor);
 }
 
-p {
-  font-size: 1.5rem;
-}
-
 .github_link {
   text-decoration: none;
   font-size: 1.25rem;
@@ -256,22 +252,43 @@ section#home {
   background-position: center center;
 }
 
+
 section#home a {
   display: flex;
   z-index: 2;
   text-decoration: none;
-  font-size: 3rem;
+  font-size: 3.5rem;
   padding-bottom: 5px;
   color: var(--primaryColor);
   border-bottom: 1px solid var(--primaryColor);
 }
 
-section#home-description {
-  font-size: 1.25rem;
+section#home p {
+  display: flex;
+  font-size: 1.5rem;
 }
 
 section#about {
   background-color: var(--navColor2);
+  font-size: 1.25rem;
+}
+
+section#about #about-content-container{
+display: grid;
+grid-template-columns: .5fr;
+grid-template-rows: 1fr;
+justify-content: center;
+}
+
+section#about a {
+  text-decoration: none;
+  color: var(--primaryColor);
+}
+
+section#about p {
+  align-self: center;
+  justify-self: start;
+  letter-spacing: 4px;
 }
 
 section#skills {
@@ -330,5 +347,13 @@ section#contact {
     font-size: 1rem;
   }
 
+  section#about #about-content-container {
+    grid-template-columns: 1fr;
+  }
+
+  section#about p {
+    font-size: 1rem;
+    margin: 10px 10px;
+  }
 
 }
