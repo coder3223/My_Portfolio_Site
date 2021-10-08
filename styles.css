@@ -252,7 +252,6 @@ section#home {
   background-position: center center;
 }
 
-
 section#home a {
   display: flex;
   z-index: 2;
@@ -273,11 +272,11 @@ section#about {
   font-size: 1.25rem;
 }
 
-section#about #about-content-container{
-display: grid;
-grid-template-columns: .5fr;
-grid-template-rows: 1fr;
-justify-content: center;
+section#about #about-content-container {
+  display: grid;
+  grid-template-columns: 0.5fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
 }
 
 section#about a {
@@ -293,6 +292,18 @@ section#about p {
 
 section#skills {
   background-color: var(--navColor3);
+}
+
+section#skills #skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 0 75px;
+}
+
+section#skills p {
+  font-size: 1.25rem;
+  letter-spacing: 4px;
 }
 
 section#projects {
@@ -355,5 +366,4 @@ section#contact {
     font-size: 1rem;
     margin: 10px 10px;
   }
-
 }
