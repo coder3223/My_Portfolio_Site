@@ -302,7 +302,7 @@ section#skills #skills-grid {
 }
 
 section#skills p {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   letter-spacing: 4px;
 }
 
@@ -313,6 +313,14 @@ section#projects {
 section#contact {
   background-color: var(--navColor5);
 }
+
+@media (max-width: 1000px) {
+  section#about #about-content-container{
+    font-size: 1rem;
+  }
+ 
+}
+
 
 /* Media Query: Tablet Lanfscape (Horizontal) */
 @media (max-width: 800px) {
@@ -365,5 +373,9 @@ section#contact {
   section#about p {
     font-size: 1rem;
     margin: 10px 10px;
+  }
+
+  section#skills #skills-grid {
+    grid-template-columns: 1fr;
   }
 }
