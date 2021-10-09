@@ -332,8 +332,7 @@ section#contact {
 /* Media Query: Large Smartphone (Vertical) */
 @media (max-width: 600px) {
   section#home a {
-    top: 1rem;
-    left: 1rem;
+    margin: 0 10px;
   }
 
   .my_name {
